@@ -1,6 +1,6 @@
 class Deck {
 
-    protected cards: Card[];
+    cards: Card[];
 
     public constructor() {
         this.cards = [];

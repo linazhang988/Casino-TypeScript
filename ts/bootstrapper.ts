@@ -1,4 +1,4 @@
-///<reference path="casino.ts"/>
+///<reference path="casino/casino.ts"/>
 
 let casino: Casino;
 casino = new Casino();

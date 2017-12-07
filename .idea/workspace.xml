@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="684c4ab4-1bfc-4400-ade3-f48c2fa2d81b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ts/bootstrapper.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ts/card.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ts/casino.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ts/console.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ts/dealer.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ts/deck.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ts/game.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ts/io.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ts/tsconfig.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ts/webPage.ts" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
+      <change beforePath="$PROJECT_DIR$/js/app.js.map" afterPath="$PROJECT_DIR$/js/app.js.map" />
+      <change beforePath="$PROJECT_DIR$/ts/bootstrapper.ts" afterPath="$PROJECT_DIR$/ts/bootstrapper.ts" />
+      <change beforePath="$PROJECT_DIR$/ts/card.ts" afterPath="$PROJECT_DIR$/ts/cards/card.ts" />
+      <change beforePath="$PROJECT_DIR$/ts/casino.ts" afterPath="$PROJECT_DIR$/ts/casino/casino.ts" />
+      <change beforePath="$PROJECT_DIR$/ts/console.ts" afterPath="$PROJECT_DIR$/ts/casino/console.ts" />
+      <change beforePath="$PROJECT_DIR$/ts/dealer.ts" afterPath="$PROJECT_DIR$/ts/dealers/dealer.ts" />
+      <change beforePath="$PROJECT_DIR$/ts/deck.ts" afterPath="$PROJECT_DIR$/ts/cards/deck.ts" />
+      <change beforePath="$PROJECT_DIR$/ts/game.ts" afterPath="$PROJECT_DIR$/ts/games/game.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,18 +25,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="card.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ts/card.ts">
+      <file leaf-file-name="card.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ts/cards/card.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="135">
+              <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="casino.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ts/casino.ts">
+        <entry file="file://$PROJECT_DIR$/ts/casino/casino.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="188">
               <caret line="13" column="55" lean-forward="false" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
@@ -58,41 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ts/console.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="dealer.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ts/dealer.ts">
+        <entry file="file://$PROJECT_DIR$/ts/dealers/dealer.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deck.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ts/deck.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="io.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ts/io.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -108,21 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webPage.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ts/webPage.ts">
+      <file leaf-file-name="game.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ts/games/game.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ts/game.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="435">
+              <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -163,13 +120,13 @@
         <option value="$PROJECT_DIR$/ts/Card.ts" />
         <option value="$PROJECT_DIR$/ts/Game.ts" />
         <option value="$PROJECT_DIR$/ts/package.json" />
-        <option value="$PROJECT_DIR$/ts/game.ts" />
-        <option value="$PROJECT_DIR$/ts/card.ts" />
-        <option value="$PROJECT_DIR$/ts/deck.ts" />
-        <option value="$PROJECT_DIR$/ts/dealer.ts" />
         <option value="$PROJECT_DIR$/ts/console.ts" />
         <option value="$PROJECT_DIR$/ts/casino.ts" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/ts/dealer.ts" />
+        <option value="$PROJECT_DIR$/ts/card.ts" />
+        <option value="$PROJECT_DIR$/ts/deck.ts" />
+        <option value="$PROJECT_DIR$/ts/game.ts" />
       </list>
     </option>
   </component>
@@ -244,6 +201,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ts/casino" />
+      <recent name="$PROJECT_DIR$/ts/games" />
+      <recent name="$PROJECT_DIR$/ts/cards" />
+      <recent name="$PROJECT_DIR$/ts/dealers" />
       <recent name="$PROJECT_DIR$/ts" />
     </key>
   </component>
@@ -272,12 +233,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512570820929</updated>
-      <workItem from="1512570822281" duration="26923000" />
+      <workItem from="1512570822281" duration="28400000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26923000" />
+    <option name="totallyTimeSpent" value="28400000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="202" y="51" width="966" height="709" extended-state="0" />
@@ -407,18 +368,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ts/webPage.ts">
+    <entry file="file://$PROJECT_DIR$/ts/cards/card.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ts/io.ts">
+    <entry file="file://$PROJECT_DIR$/ts/casino/console.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        <state relative-caret-position="45">
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ts/webPage.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -431,6 +400,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ts/io.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ts/cards/deck.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ts/dealers/dealer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ts/bootstrapper.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -439,15 +432,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ts/console.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ts/casino.ts">
+    <entry file="file://$PROJECT_DIR$/ts/casino/casino.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="13" column="55" lean-forward="false" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
@@ -455,34 +440,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ts/dealer.ts">
+    <entry file="file://$PROJECT_DIR$/ts/games/game.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ts/deck.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ts/game.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ts/card.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="435">
+          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
           <folding />
         </state>
       </provider>

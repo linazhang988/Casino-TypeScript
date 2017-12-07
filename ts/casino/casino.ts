@@ -1,4 +1,4 @@
-///<reference path="io.ts"/>
+///<reference path="../io.ts"/>
 class Casino {
 
     constructor() {

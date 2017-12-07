@@ -6,8 +6,8 @@ enum Suit {
 }
 
 class Card {
-    private suit: any;
-    private rank: any;
+    suit: any;
+    rank: any;
     public constructor(rank: number, suit: Suit){
         this.rank = rank;
         this.suit = suit;

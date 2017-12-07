@@ -1,24 +1,24 @@
 
 class Dealer extends Deck{
 
-    private dealer = Dealer;
-    private dealtCard = Card;
-    private deck = Deck;
+    dealer = Dealer;
+    dealtCard = Card;
+    deck = Deck;
 
-    public constructor(){
+    constructor(){
         super();
     }
 
-    public shuffle (): void {
+    shuffle (): void {
         this.cards.sort(() => Math.floor(Math.random() * 2 - 1));
     }
 
-    public draw(): string {
+    draw(): string {
         let cardDrawn = this.cards[0];
         return cardDrawn.name;
     }
 
-    public drawBlackjack() {
+    drawBlackjack() {
         let c = new Deck();
         let d = new Dealer();
         for (let i = 0; i <= 3; i++) {

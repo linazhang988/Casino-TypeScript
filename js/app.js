@@ -66,7 +66,7 @@ var IO = /** @class */ (function () {
     IO.userInputEle = WebPage.getUserInputElement();
     return IO;
 }());
-///<reference path="io.ts"/>
+///<reference path="../io.ts"/>
 var Casino = /** @class */ (function () {
     function Casino() {
     }
@@ -95,9 +95,35 @@ var Casino = /** @class */ (function () {
     };
     return Casino;
 }());
-///<reference path="casino.ts"/>
+///<reference path="casino/casino.ts"/>
 var casino;
 casino = new Casino();
+var Dealer = /** @class */ (function (_super) {
+    __extends(Dealer, _super);
+    function Dealer() {
+        var _this = _super.call(this) || this;
+        _this.dealer = Dealer;
+        _this.dealtCard = Card;
+        _this.deck = Deck;
+        return _this;
+    }
+    Dealer.prototype.shuffle = function () {
+        this.cards.sort(function () { return Math.floor(Math.random() * 2 - 1); });
+    };
+    Dealer.prototype.draw = function () {
+        var cardDrawn = this.cards[0];
+        return cardDrawn.name;
+    };
+    Dealer.prototype.drawBlackjack = function () {
+        var c = new Deck();
+        var d = new Dealer();
+        for (var i = 0; i <= 3; i++) {
+            d.shuffle();
+            IO.display((d.draw()));
+        }
+    };
+    return Dealer;
+}(Deck));
 var Suit;
 (function (Suit) {
     Suit[Suit["Spades"] = 0] = "Spades";
@@ -148,6 +174,17 @@ var Card = /** @class */ (function () {
     ];
     return Card;
 }());
+var Deck = /** @class */ (function () {
+    function Deck() {
+        this.cards = [];
+        for (var s = 0; s < 4; s++) {
+            for (var r = 1; r <= 13; r++) {
+                this.cards.push(new Card(r, s));
+            }
+        }
+    }
+    return Deck;
+}());
 var Games;
 (function (Games) {
     Games[Games["GoFish"] = 0] = "GoFish";
@@ -187,43 +224,6 @@ var Game = /** @class */ (function () {
     ];
     return Game;
 }());
-var Deck = /** @class */ (function () {
-    function Deck() {
-        this.cards = [];
-        for (var s = 0; s < 4; s++) {
-            for (var r = 1; r <= 13; r++) {
-                this.cards.push(new Card(r, s));
-            }
-        }
-    }
-    return Deck;
-}());
-var Dealer = /** @class */ (function (_super) {
-    __extends(Dealer, _super);
-    function Dealer() {
-        var _this = _super.call(this) || this;
-        _this.dealer = Dealer;
-        _this.dealtCard = Card;
-        _this.deck = Deck;
-        return _this;
-    }
-    Dealer.prototype.shuffle = function () {
-        this.cards.sort(function () { return Math.floor(Math.random() * 2 - 1); });
-    };
-    Dealer.prototype.draw = function () {
-        var cardDrawn = this.cards[0];
-        return cardDrawn.name;
-    };
-    Dealer.prototype.drawBlackjack = function () {
-        var c = new Deck();
-        var d = new Dealer();
-        for (var i = 0; i <= 3; i++) {
-            d.shuffle();
-            IO.display((d.draw()));
-        }
-    };
-    return Dealer;
-}(Deck));
 var konsole = /** @class */ (function (_super) {
     __extends(konsole, _super);
     function konsole() {
