@@ -1,0 +1,4 @@
+
+class konsole extends Casino{
+
+}
