@@ -1,7 +1,8 @@
 {
-    "compilerOptions": {
-        "sourceMap": true,
-        "target": "es5",
-        "outFile": "../js/app.js"
-    }
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "outFile": "../js/app.js"
+  }
 }
