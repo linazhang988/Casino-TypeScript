@@ -17,7 +17,7 @@ class Game {
         '1',
         '2',
         '3'
-    ]
+    ];
 
     get rankName (): string {
         return Game.rankNames[this.rank-1];
