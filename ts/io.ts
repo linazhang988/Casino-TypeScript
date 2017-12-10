@@ -31,16 +31,4 @@ class IO {
             }
         } while (true);
     }
-
-    public static getPositiveNumberInput(prompt: string): number {
-        let numberInput: number;
-        do {
-            numberInput = this.getNumberInput(prompt);
-            if (numberInput >= 0) {
-                return numberInput;
-            } else {
-                this.display("Please input a positive amount.");
-            }
-        } while (true);
-    }
 }

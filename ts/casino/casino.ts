@@ -1,17 +1,25 @@
 ///<reference path="../io.ts"/>
 class Casino {
 
+    displayele:any;
+    userInputEle: any;
+    listener: any;
+    name:string;
+    money:number;
+    player:any;
+    visibillity:any;
+
     constructor() {
     }
+
 
     casinoWelcome() {
         IO.display("Welcome to the Casino");
     }
 
     askForName(){
-        let name: string = IO.getStringInput("Player Name:");
-        IO.display(name);
-        IO.display("What game would you like to play?")
+        this.name = this.userInputEle.value;
+        this.displayele.innerHTML + this.name;
     }
 
     printCardName() {
@@ -26,10 +34,17 @@ class Casino {
         IO.display((c.name));
     }
 
-    printCards(){
+    hitMe(){
         let c = new Deck();
-        let d = new Dealer();
-        console.log(d.drawBlackjack())
+        let d = new Blackjack();
+        console.log( d.hand())
     }
+
+    hitDealer(){
+        let c = new Deck();
+        let d = new Blackjack();
+        console.log(d.hand())
+    }
+
 
 }

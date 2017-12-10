@@ -50,18 +50,6 @@ var IO = /** @class */ (function () {
             }
         } while (true);
     };
-    IO.getPositiveNumberInput = function (prompt) {
-        var numberInput;
-        do {
-            numberInput = this.getNumberInput(prompt);
-            if (numberInput >= 0) {
-                return numberInput;
-            }
-            else {
-                this.display("Please input a positive amount.");
-            }
-        } while (true);
-    };
     IO.displayEle = WebPage.getDisplayElement();
     IO.userInputEle = WebPage.getUserInputElement();
     return IO;
@@ -74,9 +62,8 @@ var Casino = /** @class */ (function () {
         IO.display("Welcome to the Casino");
     };
     Casino.prototype.askForName = function () {
-        var name = IO.getStringInput("Player Name:");
-        IO.display(name);
-        IO.display("What game would you like to play?");
+        this.name = this.userInputEle.value;
+        this.displayele.innerHTML + this.name;
     };
     Casino.prototype.printCardName = function () {
         var c = new Card(6, Suit.Diamonds);
@@ -88,16 +75,41 @@ var Casino = /** @class */ (function () {
         console.log(c.name);
         IO.display((c.name));
     };
-    Casino.prototype.printCards = function () {
+    Casino.prototype.hitMe = function () {
         var c = new Deck();
-        var d = new Dealer();
-        console.log(d.drawBlackjack());
+        var d = new Blackjack();
+        console.log(d.hand());
+    };
+    Casino.prototype.hitDealer = function () {
+        var c = new Deck();
+        var d = new Blackjack();
+        console.log(d.hand());
     };
     return Casino;
 }());
 ///<reference path="casino/casino.ts"/>
 var casino;
 casino = new Casino();
+///<reference path="casino/casino.ts"/>
+var konsole = /** @class */ (function (_super) {
+    __extends(konsole, _super);
+    function konsole() {
+        return _super.call(this) || this;
+    }
+    return konsole;
+}(Casino));
+var Deck = /** @class */ (function () {
+    function Deck() {
+        this.cards = [];
+        for (var s = 0; s < 4; s++) {
+            for (var r = 1; r <= 13; r++) {
+                this.cards.push(new Card(r, s));
+            }
+        }
+    }
+    return Deck;
+}());
+///<reference path="../cards/deck.ts"/>
 var Dealer = /** @class */ (function (_super) {
     __extends(Dealer, _super);
     function Dealer() {
@@ -114,16 +126,29 @@ var Dealer = /** @class */ (function (_super) {
         var cardDrawn = this.cards[0];
         return cardDrawn.name;
     };
-    Dealer.prototype.drawBlackjack = function () {
+    return Dealer;
+}(Deck));
+///<reference path="../dealers/dealer.ts"/>
+var Blackjack = /** @class */ (function (_super) {
+    __extends(Blackjack, _super);
+    function Blackjack() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.dealer = Dealer;
+        _this.dealtCard = Card;
+        _this.deck = Deck;
+        _this.blackjack = Blackjack;
+        return _this;
+    }
+    Blackjack.prototype.hand = function () {
         var c = new Deck();
         var d = new Dealer();
-        for (var i = 0; i <= 3; i++) {
+        for (var i = 0; i <= 1; i++) {
             d.shuffle();
             IO.display((d.draw()));
         }
     };
-    return Dealer;
-}(Deck));
+    return Blackjack;
+}(Dealer));
 var Suit;
 (function (Suit) {
     Suit[Suit["Spades"] = 0] = "Spades";
@@ -174,17 +199,6 @@ var Card = /** @class */ (function () {
     ];
     return Card;
 }());
-var Deck = /** @class */ (function () {
-    function Deck() {
-        this.cards = [];
-        for (var s = 0; s < 4; s++) {
-            for (var r = 1; r <= 13; r++) {
-                this.cards.push(new Card(r, s));
-            }
-        }
-    }
-    return Deck;
-}());
 var Games;
 (function (Games) {
     Games[Games["GoFish"] = 0] = "GoFish";
@@ -224,11 +238,18 @@ var Game = /** @class */ (function () {
     ];
     return Game;
 }());
-var konsole = /** @class */ (function (_super) {
-    __extends(konsole, _super);
-    function konsole() {
-        return _super !== null && _super.apply(this, arguments) || this;
+var Player = /** @class */ (function () {
+    function Player() {
     }
-    return konsole;
-}(Casino));
+    Player.prototype.sayHi = function () {
+        var txtName = document.getElementById("getAccount");
+        var txtOutput = document.getElementById("txtOutput");
+    };
+    return Player;
+}());
+var Hand = /** @class */ (function () {
+    function Hand() {
+    }
+    return Hand;
+}());
 //# sourceMappingURL=app.js.map

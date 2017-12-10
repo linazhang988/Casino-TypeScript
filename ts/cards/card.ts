@@ -6,8 +6,8 @@ enum Suit {
 }
 
 class Card {
-    suit: any;
-    rank: any;
+    public suit: any;
+    public rank: any;
     public constructor(rank: number, suit: Suit){
         this.rank = rank;
         this.suit = suit;
@@ -27,7 +27,7 @@ class Card {
         'Jack',
         'Queen',
         'King'
-    ]
+    ];
 
     public get rankName (): string {
         return Card.rankNames[this.rank -1];

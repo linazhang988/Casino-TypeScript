@@ -1,3 +1,4 @@
+///<reference path="../cards/deck.ts"/>
 
 class Dealer extends Deck{
 
@@ -5,7 +6,7 @@ class Dealer extends Deck{
     dealtCard = Card;
     deck = Deck;
 
-    constructor(){
+    constructor() {
         super();
     }
 
@@ -18,12 +19,4 @@ class Dealer extends Deck{
         return cardDrawn.name;
     }
 
-    drawBlackjack() {
-        let c = new Deck();
-        let d = new Dealer();
-        for (let i = 0; i <= 3; i++) {
-            d.shuffle();
-            IO.display((d.draw()))
-        }
-    }
 }

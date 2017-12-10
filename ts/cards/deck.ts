@@ -1,6 +1,6 @@
 class Deck {
 
-    cards: Card[];
+     cards: Card[];
 
     public constructor() {
         this.cards = [];
